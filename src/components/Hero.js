@@ -20,9 +20,9 @@ export default function Header({ color }) {
     const contactSection = document.querySelector("#contact");
     contactSection.scrollIntoView({ behavior: "smooth" });
   };
-  const linkedin = () => {
+  const resume = () => {
     window.open(
-                `${profile.linkedin}`,
+                `https://drive.google.com/file/d/170rtw7yCBL2TjRqd5MhiVxXCmMLWTF-P/view?usp=drive_link`,
                 "_blank",
                 "noreferrer,noopener"
               );
@@ -78,7 +78,7 @@ export default function Header({ color }) {
               _hover={{
                 bg: `${color}.500`,
               }}
-              onClick="https://drive.google.com/file/d/170rtw7yCBL2TjRqd5MhiVxXCmMLWTF-P/view?usp=sharing"
+              onClick={resume}
             >
               View Resume!
             </Button>
