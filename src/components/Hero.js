@@ -78,7 +78,7 @@ export default function Header({ color }) {
               _hover={{
                 bg: `${color}.500`,
               }}
-              onClick={linkedin}
+              onClick="https://drive.google.com/file/d/170rtw7yCBL2TjRqd5MhiVxXCmMLWTF-P/view?usp=sharing"
             >
               View Resume!
             </Button>
