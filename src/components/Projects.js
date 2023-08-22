@@ -8,7 +8,6 @@ import {
   Button,
   Card,
   CardBody,
-  Image,
   Heading,
   Badge,
 } from "@chakra-ui/react";
@@ -19,38 +18,37 @@ export default function Projects({ color }) {
     {
       name: "Google Bard Clone",
       description: "This project is a clone of Google Bard, a large language model (LLM) chatbot developed by Google AI. The project was created using HTML, CSS, JavaScript, and Flask. The project is able to generate text, translate languages, write different kinds of creative content, and answer questions in an informative way.",
-      image: "project1.jpg",
       buttons: [
-        { text: "Code", href: "#" }
+        { text: "GitHub", href: "https://github.com/shreyasshettyb/Google_Bard_Clone" }
       ],
       badges: [{ text: "HTML, CSS, JavaScript, Flask, Python.", colorScheme: "pink" }],
     },
     {
       name: "Blood Bank Management System",
-      description: "Description of Project 2This project is a web-based blood bank management system that allows blood banks in hospital to manage their inventory of blood, request other blood bank for donations. The system is built using HTML, CSS, PHP, and MySQL",
+      description: "This project is a web-based blood bank management system that allows blood banks in hospital to manage their inventory of blood, request other blood bank for donations. The system is built using HTML, CSS, PHP, and MySQL",
       buttons: [
   
-        { text: "Code", href: "#" },
+        { text: "GitHub", href: "https://github.com/shreyasshettyb/BloodBank_Management_System" },
       ],
       badges: [{ text: "HTML, CSS, PHP, MYSQL.", colorScheme: "red" }],
     },
     {
       name: "Portfolio Website",
       description: "This project is a personal portfolio website that showcases my skills and experience in web development. The website is built using HTML, CSS, JavaScript, Node.js, and React.js.",
-      image: "project1.jpg",
+      
       buttons: [
       
-        { text: "Code", href: "#" },
+        { text: "GitHub", href: "https://github.com/shreyasshettyb/Portfolio_V2.0" },
       ],
       badges: [{ text: "HTML, CSS, JavaScript, Node.JS, React.", colorScheme: "purple" }],
     },
     {
       name: "Crowd Funding",
       description: "This Android project is a crowdfunding app that allows users to create and manage crowdfunding campaigns.",
-      image: "project1.jpg",
+      
       buttons: [
       
-        { text: "Code", href: "#" },
+        { text: "GitHub", href: "https://github.com/shreyasshettyb/CrowdFunding-MAD-Project" },
       ],
       badges: [{ text: "Android Studio", colorScheme: "blue" }],
     }
@@ -83,8 +81,6 @@ export default function Projects({ color }) {
                   }}
                   overflow="hidden"
                 >
-                  <Image objectFit="cover" src={project.image} />
-
                   <Stack>
                     <CardBody align="left">
                       <Heading size="md" color={`${"purple"}.400`}>{project.name}</Heading>
@@ -93,7 +89,7 @@ export default function Projects({ color }) {
 
                       <HStack py={2}>
                         {project.buttons.map((button) => (
-                          <a key={button.text} href={button.href}>
+                          <a key={button.text} href={button.href} target="_blank" rel="noopener noreferrer">
                             <Button color={`${"purple"}.400`}>
                               {button.text}
                             </Button>

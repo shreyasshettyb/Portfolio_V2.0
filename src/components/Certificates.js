@@ -17,54 +17,54 @@ import { Fade } from "react-reveal";
 export default function Certificates({ color }) {
     const certificates = [
         {
-          name: "Python Data Structures (Getting Started with Python)",
-          description: "Certificate from the University of Michigan on Coursera.",
-          image: "python_certificate.jpg", // Replace with actual certificate image
+          name: "Python Data Structures ",
+          description: "Certificate from the University of Michigan on Coursera.",         
+          link:"https://coursera.org/share/b58bb7192ec17ee6f5e698d70d69c972"
         },
         {
           name: "Web Design for Everybody: Basics of Web Development & Coding Specialization",
-          description: "Certificate from the University of Michigan on Coursera.",
-          image: "web_design_certificate.jpg", // Replace with actual certificate image
+          description: "Certificate from the University of Michigan on Coursera.",         
+          link:"https://coursera.org/share/430013ac8af3a72a4634079558258003"
         },
         {
           name: "Introduction to Front-End Development",
-          description: "Certificate from Meta on Coursera.",
-          image: "front_end_certificate.jpg", // Replace with actual certificate image
+          description: "Certificate from Meta on Coursera.",        
+          link:"https://coursera.org/share/ab095ade341bc0a08fce3b7514a23fa4"
         },
         {
           name: "HTML, CSS, and Javascript for Web Developers",
           description: "Certificate from Johns Hopkins University on Coursera.",
-          image: "html_css_js_certificate.jpg", // Replace with actual certificate image
+          link:"https://coursera.org/share/a64f09f3abe87de23374f4a9025794a0"
         },
         {
           name: "Introduction to Back-End Development",
           description: "Certificate from Meta on Coursera.",
-          image: "back_end_certificate.jpg", // Replace with actual certificate image
+          link:"https://coursera.org/share/07316e3310726e18773144f524584605"
         },
         {
           name: "Agile for Software Development: Lean, Agile, & Scrum Methodologies",
           description: "Certificate from Skillsoft.",
-          image: "agile_certificate.jpg", // Replace with actual certificate image
+          link:"https://skillsoft.digitalbadges.skillsoft.com/bcbd9851-3283-4a4b-89e7-ea7266882ed4#gs.45an65"
         },
         {
           name: "SQL Concepts & Queries",
           description: "Certificate from Skillsoft.",
-          image: "sql_certificate.jpg", // Replace with actual certificate image
+          link:"https://skillsoft.digitalbadges.skillsoft.com/fdbb3584-1e53-4b16-a1b4-7cb7986e8d0b#gs.45aoqw"
         },
         {
           name: "Javascript For Beginners Complete Course",
           description: "Certificate from Udemy.",
-          image: "javascript_certificate.jpg", // Replace with actual certificate image
+          link:"https://www.udemy.com/certificate/UC-7734735c-899f-4238-b1ea-5b5021de081b/"
         },
         {
           name: "7 Days Virtual Bootcamp on Web Development",
           description: "Certificate from DevTown.",
-          image: "bootcamp_certificate.jpg", // Replace with actual certificate image
+          link:"https://cert.devtown.in/verify/11FCSM"
         },
         {
           name: "Postman Classroom Program",
           description: "Certificate from COSH, NITK Surathkal.",
-          image: "postman_certificate.jpg", // Replace with actual certificate image
+          link:""
         },
         // ... add more certificates as needed
       ];
@@ -113,8 +113,8 @@ export default function Certificates({ color }) {
                           {/* Add button or link for viewing/download */}
                           
                           <HStack py={2}>
-                            <a href="www.google.com" download>
-                              <Button color={`${"teal"}.400`}>Download</Button>
+                            <a href={certificate.link} target="_blank" rel="noopener noreferrer">
+                              <Button color={`${"teal"}.400`}>View Certificate</Button>
                             </a>
                           </HStack>
                         </CardBody>

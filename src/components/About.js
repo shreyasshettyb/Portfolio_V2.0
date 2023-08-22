@@ -28,7 +28,7 @@ export default function About({ color }) {
               </HStack>
               <Divider orientation="horizontal" />
             </Stack>
-            <Text color={"teal.400"} fontSize={"xl"} px={4}>
+            <Text align="left" color={"teal.400"} fontSize={"xl"} px={4} mx={8}>
               {profile.about}
             </Text>
           </Stack>
