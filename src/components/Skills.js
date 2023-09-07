@@ -46,7 +46,7 @@ export default function Skills({ color }) {
       <Stack
         as={Box}
         textAlign={"center"}
-        spacing={{ base: 8, md: 14 }}
+        spacing={{ base: 8, md: 1 }}
         pb={{ base: 20, md: 10 }}
       >
         <Stack align="center" direction="row" px={4}>
@@ -59,7 +59,7 @@ export default function Skills({ color }) {
           <Divider orientation="horizontal" />
         </Stack>
         <Stack align="center" px={4} spacing={4}>
-          <HStack spacing={8}>
+          <HStack spacing={20}>
             {skillsRow1.map((skill, index) => (
               <Fade key={index} delay={index * 200}>
                 <Box
@@ -74,7 +74,7 @@ export default function Skills({ color }) {
               </Fade>
             ))}
           </HStack>
-          <HStack spacing={8} mt={4}>
+          <HStack spacing={20} mt={4}>
             {skillsRow2.map((skill, index) => (
               <Fade key={index} delay={index * 200}>
                 <Box
@@ -89,7 +89,7 @@ export default function Skills({ color }) {
               </Fade>
             ))}
           </HStack>
-          <HStack spacing={8} mt={4}>
+          <HStack spacing={20} mt={4}>
             {skillsRow3.map((skill, index) => (
               <Fade key={index} delay={index * 200}>
                 <Box
