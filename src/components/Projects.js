@@ -66,7 +66,7 @@ export default function Projects({ color }) {
           <Stack align="center" direction="row" >
             <HStack mx={2}>
               <Text color={`${color}.400`} fontWeight={800}>
-                03
+                04
               </Text>
               <Text fontWeight={800}>Projects</Text>
             </HStack>

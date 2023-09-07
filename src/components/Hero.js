@@ -44,7 +44,7 @@ export default function Header({ color }) {
           pb={{ base: 20, md: 10 }}
           pt={{ base: 36, md: 40 }}
         >
-          <Image align="center" mx="auto" src= {logo} width="20%" />
+          <Image align="center" mx="auto" src= {logo} width="20%" className="App-logo"/>
           <Heading
             fontWeight={600}
             fontSize={{ base: "2xl", sm: "4xl", md: "4xl" }}

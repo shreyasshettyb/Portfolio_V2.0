@@ -82,7 +82,7 @@ export default function Certificates({ color }) {
               <Stack align="center" direction="row">
                 <HStack mx={2}>
                   <Text color={`${color}.400`} fontWeight={800}>
-                    04
+                    03
                   </Text>
                   <Text fontWeight={800}>Certificates</Text>
                 </HStack>
